@@ -65,4 +65,21 @@ export const useAuthStore = create((set, get) => ({
       set({ isLogout: false });
     }
   },
+
+  registerUser: async (formData) => {
+    set({ isRegistering: true });
+    try {
+      const res = await axiosInstance.post("/auth/register", formData);
+      if (res.data?.status) {
+        toast.success(res.data?.message);
+      } else {
+        toast.error(res.data?.message);
+      }
+      return true;
+    } catch (error) {
+      toast.error(res.data?.message);
+    } finally {
+      set({ isRegistering: false });
+    }
+  },
 }));
