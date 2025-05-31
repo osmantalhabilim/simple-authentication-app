@@ -13,7 +13,7 @@ export const useAuthStore = create((set, get) => ({
     if (get().authUser) return;
     set({ isCheckingAuth: true });
     try {
-      const res = await axiosInstance.post("/auth/checkauth");
+      const res = await axiosInstance.get("/auth/checkauth");
       set({ authUser: res?.data?.user });
     } catch (error) {
       toast.error(error?.data?.message || "Yönlendiriliyorsunuz");
