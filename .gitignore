@@ -1,0 +1,51 @@
+# === Global ===
+.DS_Store
+.env
+.env.local
+.env.*.local
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+build/
+node_modules/
+.idea/
+.vscode/
+*.swp
+
+# === frontend ===
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.DS_Store
+
+# Vite
+frontend/.vite/
+
+# React / general
+frontend/build/
+frontend/coverage/
+
+# === backend ===
+backend/node_modules/
+backend/dist/
+backend/build/
+backend/.env
+backend/.env.local
+backend/.DS_Store
+
+# Express / general backend
+backend/logs/
+backend/coverage/
+
+# === OS-specific ===
+Thumbs.db
+ehthumbs.db
+
+# === Optional: test / coverage tools ===
+coverage/
+*.lcov
+jest-html-reporters-*.html
