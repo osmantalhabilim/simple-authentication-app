@@ -78,7 +78,7 @@ Database bağlantısı tamamlandı
 |--------|---------------------|-------------------|
 | POST   | /api/auth/register  | Kullanıcı kaydı   |
 | POST   | /api/auth/login     | Kullanıcı girişi  |
-| POST   | /api/auth/logout    | Kullanıcı girişi  |
+| POST   | /api/auth/logout    | Kullanıcı Çıkışı  |
 | GET    | /api/auth/checkauth | Token kontrolü    |
 
 ---
