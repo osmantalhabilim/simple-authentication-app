@@ -50,9 +50,9 @@ npm install
 `backend` klasörüne aşağıdaki içeriğe sahip `.env` dosyasını oluştur:
 
 ```env
-PORT=5000
+PORT=3000
 MONGO_URI=mongodb+srv://<kullanici>:<sifre>@cluster.mongodb.net/<veritabani>?retryWrites=true&w=majority
-JWT_SECRET=seninGizliAnahtarın
+JWT_SECRET=mysecretkey
 ```
 
 > `MONGO_URI` ve `JWT_SECRET` bilgilerini kendi ortamına göre doldur.
