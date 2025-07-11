@@ -7,7 +7,7 @@ import { connectDB } from "./lib/db.js";
 import authRoutes from "./routes/auth.route.js";
 
 dotenv.config();
-const _PORT = process.env.API_PORT;
+const _PORT = process.env.PORT;
 
 const app = express();
 
